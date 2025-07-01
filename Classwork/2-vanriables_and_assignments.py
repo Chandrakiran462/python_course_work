@@ -12,7 +12,7 @@ _myvar=10   #valid var
 #my var=10   ***[SyntaxError: invalid syntax]***
 a=10 
 a,b,c=10,20,30
-print(a,b,c)    #10,20,30
+print(a,b,c)    # 10,20,30
 a=b=c=10
 print(a,b,c) # 10,10,10
 a=10
