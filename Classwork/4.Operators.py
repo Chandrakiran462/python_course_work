@@ -51,16 +51,16 @@ print("NOT(not):",not(a < b))               # NOT(not): False   [Reverses the co
 
 # 5. Membership Operators [in, not in]
 '''Membership operators check if a value exists within a sequence (like a list, string, or tuple).'''
-s = "Kiran"        # str
-print('i' in s)         # True [Returns True if the value exists in the sequence]
+s = "Kiran"                 # str
+print('i' in s)             # True [Returns True if the value exists in the sequence]
 l = ["kiran","data","analytics"]    # list
-print('kiran' in l)     # True
-t = (1,4,3,6,7)     # tuple
-print(8 not in t)       # True
-se = {2,5,3,7}      # set
-print(10 not in se)     # True [Returns True if the value does NOT exist in the sequence]
+print('kiran' in l)         # True
+t = (1,4,3,6,7)             # tuple
+print(8 not in t)           # True
+se = {2,5,3,7}              # set
+print(10 not in se)         # True [Returns True if the value does NOT exist in the sequence]
 d = {'name':'kiran' , 'course' : 'DA'}  #dict
-print('batch' in d)     # False
+print('batch' in d)         # False
 
 # 6. Identity Operators [is, is not]
 '''Identity operators check whether two variables refer to the same object in memory.'''
