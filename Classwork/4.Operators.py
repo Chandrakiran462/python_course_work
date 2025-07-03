@@ -70,3 +70,15 @@ j = l
 print(j is k)       # False [Different objects with the same content]
 print(j is l)       # True  [Both refer to the same object]
 print(j is not k)   # True
+
+# 7. Bitwise Operators (With Binary Representation)
+'''Bitwise operators perform operations on the binary representation of numbers.'''
+w = 8       #Binary - 1000
+i = 4       #Binary - 0100
+
+print("Bitwise AND (&):",w & i)             # Bitwise AND (&): 0
+print("Bitwise OR (|):",w | i)              # Bitwise OR (|): 12
+print("Bitwise XOR (^):",w ^ i)             # Bitwise XOR (^): 12
+print("Bitwise NOT (~):",~i)                # Bitwise NOT (~): -5 [it gives -ve because bit size can't be defined]
+print("Bitwise Left Shift (<<):",w << 2)    # Bitwise Left Shift (<<): 32
+print("Bitwise Right Shift (>>):",i >> 1)   # Bitwise Right Shift (>>): 2
