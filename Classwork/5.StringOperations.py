@@ -52,3 +52,19 @@ print(s.rfind('i'))             # 9 [Returns the last occurrence of the substrin
 print(s.index('i'))             # 9 [Like find(), but raises an error if not found]
 print(s.count('a'))             # 3 [Counts how many times 'a' appears. ]
 print(k.count('s'))             # 2 [Counts how many times 's' appears. ]
+
+# 4. String Testing Methods (Boolean Results) filters{startswith,endswith}
+
+r = "21A91A0462"
+print(r.startswith('21A'))
+filen = "StringOperations.py"
+print(filen.endswith('.py'))
+print(r.isalpha())
+print(r.isalnum())
+name = "chandra kiran"
+print(name.isupper())
+print(name.islower())
+print(name.isspace())
+print(name.istitle())
+print(filen.isidentifier())
+l = []
