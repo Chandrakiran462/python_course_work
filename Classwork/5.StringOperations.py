@@ -49,5 +49,6 @@ print('462'.zfill(6))           # 000462 ["Pads the string with zeros on the lef
 
 print(s.find('cha'))            # -1 ["Returns the index of first occurrence, -1 if not found"]
 print(s.rfind('i'))             # 9 [Returns the last occurrence of the substring.]
+print(s.index('i'))             # 9 [Like find(), but raises an error if not found]
 print(s.count('a'))             # 3 [Counts how many times 'a' appears. ]
 print(k.count('s'))             # 2 [Counts how many times 's' appears. ]
