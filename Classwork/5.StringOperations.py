@@ -56,15 +56,44 @@ print(k.count('s'))             # 2 [Counts how many times 's' appears. ]
 # 4. String Testing Methods (Boolean Results) filters{startswith,endswith}
 
 r = "21A91A0462"
-print(r.startswith('21A'))
+print("start  :",r.startswith('21A'))  # True  [Checks if the string starts with '21A']
 filen = "StringOperations.py"
-print(filen.endswith('.py'))
-print(r.isalpha())
-print(r.isalnum())
-name = "chandra kiran"
-print(name.isupper())
-print(name.islower())
-print(name.isspace())
-print(name.istitle())
-print(filen.isidentifier())
-l = []
+print(filen.endswith('.py'))           # True  [Checks if the string ends with '.py']
+print(r.isalpha())                     # False [Returns True if all characters are alphabets.]
+print(r.isalnum())                     # True  [Returns True if all characters are alphanumeric.]
+name = "sri sai chandra kiran"
+print(name.isupper())                  # False [Returns True if all characters are lowercase.]
+print(name.islower())                  # True  [Returns True if all characters are uppercase]
+print(name.isspace())                  # False [Returns True if all characters are whitespace]
+print(name.istitle())                  # False [Returns True if the string is in the title case]
+print(filen.isidentifier())            # False [Checks if the string is a valid Python identifier]
+d = '1234'
+print(d.isdecimal())                   # True  [Most strict; only base-10 digits ('0'–'9' and equivalents)]
+print(d.isdigit())                     # True  [Allows additional digit characters like superscripts]
+print(d.isnumeric())                   # True  [ Most flexible; includes digits, fractions, Roman numerals, etc.]
+
+# 5. Replace & Modify Methods
+
+print(name.replace("a","@"))                            # sri s@i ch@ndr@ kir@n [Replaces occurrences of 'a' with '@'.]
+print(name.translate(str.maketrans("sark","$@*#")))     # $*i $@i ch@nd*@ #i*@n [Replaces characters using a translation table {s:$,a:@,r:*,k:#}.]
+print(name.maketrans("sark","$@*#"))                    # {115: 36, 97: 64, 114: 42, 107: 35} [Creates a translation table for translate().]
+
+# 6. Splitting & Joining Methods
+
+print(name.split(" "))                  # ['sri', 'sai', 'chandra', 'kiran'] **[Splits the string into a list by ' '.]**
+print(name.rsplit(" ",1))               # ['sri sai chandra', 'kiran'] **[Splits from the right side.]**
+print("chandra\nkiran".splitlines())    # ['chandra', 'kiran'] **[Splits at line breaks (\n).]**
+print(" ".join(["hello","kiran"]))      # hello kiran   **[Joins elements with a separator.]**
+print(filen.partition("."))             # ('StringOperations', '.', 'py') **[Splits into a 3-part tuple at first '.']**
+print(filen.rpartition("."))            # ('StringOperations', '.', 'py') **[Splits into a 3-part tuple at last '.']**
+
+# 7. Whitespace & Trimming Methods
+print("   kiran".strip())               # kiran     [Removes leading and trailing characters (default: spaces).]
+print("---kiran---".lstrip("-"))        # kiran---  [Removes leading characters."-" in left]
+print("---kiran---".rstrip("-"))        # ---kiran  [Removes trailing characters."-" in rignt]
+
+# 8. Encoding & Decoding Methods
+mes = "hello 😊❤️🎉"
+en = mes.encode()
+print(en)                               # b'hello \xf0\x9f\x98\x8a\xe2\x9d\xa4\xef\xb8\x8f\xf0\x9f\x8e\x89'[Converts the string to bytes.]
+print(en.decode())                      # hello 😊❤️🎉 [Converts bytes back to string.]
