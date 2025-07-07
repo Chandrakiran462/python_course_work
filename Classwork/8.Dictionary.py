@@ -11,3 +11,5 @@ the key-value pairs are separated by commas.
 
 '''
 
+data = {'name':'kiran','course':'DA','Batch':'14','passed':2025}
+
