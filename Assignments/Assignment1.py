@@ -1,7 +1,7 @@
 #Zing Bus Ticket Booking
 
 Boarding_point = input("Enter Boarding point: ")
-Dropping Point = input("Enter Dropping Point: ")
+Dropping_Point = input("Enter Dropping Point: ")
 Date = input("Enter Date: ")
 berth = input("Enter Berth(upper or lower): ")
 bus = input("Enter Bus feature (AC or Non-AC): ")
@@ -17,4 +17,4 @@ driver_name = input()
 driver_contact = input()
 
 
-print()
+print("Zing Bus Journey Details".center(50,'-'))
