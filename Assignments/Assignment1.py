@@ -2,7 +2,7 @@
 
 Boarding_point = input("Enter Boarding point: ")
 Dropping_Point = input("Enter Dropping Point: ")
-Date = input("Enter Date: ")
+Date = input("Enter Date of Journey: ")
 berth = input("Enter Berth(upper or lower): ")
 bus = input("Enter Bus feature (AC or Non-AC): ")
 seat_type = input("Enter Seat Type(Seater or Sleeper): ")
