@@ -65,7 +65,7 @@ print(s)                            # [] **[previously s = ['sri','sai','chandra
 
 print(mix.index('kiran'))           # 11 [Returns the index of the first occurrence of 'kiran'.]
 print(num.count(2))                 # 3  [Returns the number of times 2 appears in the list.]
-print(sorted(num))                  # [1, 2, 2, 2, 4, 5, 44, 100] 
+print(sorted(num))                  # [1, 2, 2, 2, 4, 5, 44, 100] # temp sort
 print(num)                          # [1, 2, 4, 5, 2, 100, 2, 44]
 num.sort()                          # [Sorts the list (ascending by default)]
 print(num)                          # [1, 2, 2, 2, 4, 5, 44, 100]
