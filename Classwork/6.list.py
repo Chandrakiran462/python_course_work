@@ -33,7 +33,7 @@ print(mix[4:9])                     # [2, 3, 4, 3, 2.4] {slicing} **[Returns val
 print(mix[:4])                      # [1, 2, 3, 4] **[Returns values "from start"]**
 print(mix[9:])                      # [5.8, 'kiran', True, (1, 2, 4), {1, 3, 44}, [6, 3, 4], (4+5j)] **[Returns Values "to end"]
 print(mix[-5:-1])                   # [True, (1, 2, 4), {1, 3, 44}, [6, 3, 4]] {-ve slicing} **[Returns values from index (4 to 9)]**
-print(mix[::-1]) #reverse of string # [(4+5j), [6, 3, 4], {1, 3, 44}, (1, 2, 4), True, 'kiran', 5.8, 2.4, 3, 4, 3, 2, 4, 3, 2, 1]
+print(mix[::-1]) #reverse of list # [(4+5j), [6, 3, 4], {1, 3, 44}, (1, 2, 4), True, 'kiran', 5.8, 2.4, 3, 4, 3, 2, 4, 3, 2, 1]
 
 # 4. Modifying Lists
 
