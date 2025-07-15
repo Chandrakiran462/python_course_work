@@ -32,21 +32,22 @@ print("Driver Name: {} \nDriver Contact: {}".format(driver_name,driver_contact))
 #OUTPUT
 
 # [INPUT]
-# Enter Boarding point: Rajanagaram
-# Enter Dropping Point: Hyderabad  
-# Enter Date of Journey: 28-7-2025
-# Enter Berth(upper or lower): upper
-# Enter Bus feature (AC or Non-AC): AC
-# Enter Seat Type(Seater or Sleeper): Sleeper
-# Enter Total Seats: 36
-# Enter No.of Seats Booked: 8
-# Enter Seat Number(s)(comma-seperated): S17,S18
+# Enter Boarding point: Rajanagaram       # str
+# Enter Dropping Point: Hyderabad         # str
+# Enter Date of Journey: 28-7-2025        # str
+# Enter Berth(upper or lower): upper      # str
+# Enter Bus feature (AC or Non-AC): AC    # str
+# Enter Seat Type(Seater or Sleeper): Sleeper # str
+# Enter Total Seats: 36                   # int
+# Enter No.of Seats Booked: 8             # int
+# Enter Seat Number(s)(comma-seperated): S17,S18 # tuple
 # Enter Bus amenities(comma-seperated):  Air Freshener, Charging Point, Medical Kit, water Bottle, Live Tracking, Blanket 
-# Enter Price: 586.35
-# Enter Discount Percentage: 15
-# Enter Service Name: Zing bus Plus
-# Enter Driver Name: Raju
-# Enter Driver Contace: 7584689533
+#                                           List
+# Enter Price: 586.35                   # float
+# Enter Discount Percentage: 15         # float
+# Enter Service Name: Zing bus Plus     # str
+# Enter Driver Name: Raju               # str
+# Enter Driver Contace: 7584689533      # str
 
 
 # [OUTPUT]
