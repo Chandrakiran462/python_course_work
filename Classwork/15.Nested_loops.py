@@ -38,7 +38,7 @@ n = int(input("enter size: "))
 '''
 
 # for rows in range(n):
-#     for cols in range(n + 1):
+#     for cols in range(rows + 1):
 #         print(rows,end = " ")
 #     print()
 
@@ -82,9 +82,42 @@ enter size: 5
   * * * *
 * * * * *
 '''
+# for rows in range(n):
+#     for spaces in range(rows):
+#         print(" ",end = " ")
+#     for cols in range(n - rows):
+#         print("*",end = " ")
+#     print()
+
+'''
+* * * * * * * * * 
+  * * * * * * * * 
+    * * * * * * * 
+      * * * * * * 
+        * * * * * 
+          * * * * 
+            * * * 
+              * * 
+                * 
+'''
 for rows in range(n):
-    for spaces in range(rows):
-        print(" ",end = " ")
-    for cols in range(n - rows):
+    for cols in range(rows + 1):
         print("*",end = " ")
     print()
+for rows in range(1,n):
+    for cols in range(n - rows):
+        print('*',end = " ")
+    print()
+
+'''
+enter size: 5
+* 
+* *
+* * *
+* * * *
+* * * * *
+* * * *
+* * *
+* *
+*
+'''
