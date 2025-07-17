@@ -42,12 +42,12 @@ print("Driver Name: {} \nDriver Contact: {}".format(driver_name,driver_contact))
 # Enter No.of Seats Booked: 8             # int
 # Enter Seat Number(s)(comma-seperated): S17,S18 # tuple
 # Enter Bus amenities(comma-seperated):  Air Freshener, Charging Point, Medical Kit, water Bottle, Live Tracking, Blanket 
-#                                           List
-# Enter Price: 586.35                   # float
-# Enter Discount Percentage: 15         # float
-# Enter Service Name: Zing bus Plus     # str
-# Enter Driver Name: Raju               # str
-# Enter Driver Contace: 7584689533      # str
+#                                         # List
+# Enter Price: 586.35                     # float
+# Enter Discount Percentage: 15           # float
+# Enter Service Name: Zing bus Plus       # str
+# Enter Driver Name: Raju                 # str
+# Enter Driver Contace: 7584689533        # str
 
 
 # [OUTPUT]
