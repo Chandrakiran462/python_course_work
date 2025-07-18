@@ -100,6 +100,21 @@ enter size: 5
               * * 
                 * 
 '''
+# repeteation method
+# for rows in range (n):
+#   print(" " * rows,end = " " )
+#   print("*" * (n-rows),end = " ")
+#   print()
+'''
+enter size: 5
+ ***** 
+  ****
+   ***
+    **
+     *
+'''
+
+
 # for rows in range(n):
 #     for cols in range(rows + 1):
 #         print("*",end = " ")
@@ -121,3 +136,136 @@ enter size: 5
 * *
 *
 '''
+
+# for rows in range(n):
+#   if rows <= n//2:
+#     print("*" * (rows+1),end = " ")
+#   else:
+#     print("*" * (n-rows),end = " ")
+#   print()
+
+'''
+enter size: 17
+* 
+**
+***
+****
+*****
+******
+*******
+********
+*********
+********
+*******
+******
+*****
+****
+***
+**
+*
+'''
+
+# for rows in range(n):
+#   for cols in range(n):
+#     if rows == 0 or rows == (n-1) or cols == 0 or cols == n-1:
+#       print("*",end= " ")
+#     else:
+#       print(" ",end = " ")
+#   print()
+'''
+enter size: 10
+* * * * * * * * * * 
+*                 *
+*                 *
+*                 *
+*                 *
+*                 * 
+*                 *
+*                 *
+*                 *
+* * * * * * * * * *
+'''
+
+
+# for rows in range(n):
+#   for cols in range(n):
+#     if rows == 0 or rows == (n-1) or rows == n // 2 or cols == 0 or cols == n-1 or cols == n // 2:
+#       print("*",end= " ")
+#     else:
+#       print(" ",end = " ")
+#   print()
+'''
+  enter size: 19
+* * * * * * * * * * * * * * * * * * * 
+*                 *                 * 
+*                 *                 *
+*                 *                 * 
+*                 *                 *
+*                 *                 * 
+*                 *                 *
+*                 *                 *
+*                 *                 * 
+* * * * * * * * * * * * * * * * * * *
+*                 *                 * 
+*                 *                 *
+*                 *                 *
+*                 *                 * 
+*                 *                 *
+*                 *                 *
+*                 *                 * 
+*                 *                 *
+* * * * * * * * * * * * * * * * * * *
+'''
+
+
+# for rows in range(n):
+#   for cols in range(n):
+#     if rows == 0 or rows == (n-1) or rows + cols == n-1:
+#       print("*",end= " ")
+#     else:
+#       print(" ",end = " ")
+#   print()
+
+'''
+enter size: 10
+* * * * * * * * * * 
+                *
+              *
+            *
+          *         
+        *
+      *             
+    *
+  *                 
+* * * * * * * * * *
+'''
+
+
+# for rows in range(n):
+#   for cols in range(n):
+#     if rows == cols or rows + cols == n-1:
+#       print("*",end= " ")
+#     else:
+#       print(" ",end = " ")
+#   print()
+'''
+enter size: 9 
+*               * 
+  *           *
+    *       *
+      *   *       
+        *
+      *   *
+    *       *
+  *           *
+*               *
+'''
+
+for rows in range(n):
+  for cols in range(n - rows):
+    print('*',end = " ")
+  print()
+for rows in range(1,n):
+  for cols in range(rows+1):
+    print("*",end = " ")
+  print()
