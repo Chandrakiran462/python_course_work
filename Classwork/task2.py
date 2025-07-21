@@ -13,8 +13,7 @@ photos = {
 for i in photos:
     print(f"{i}. {photos[i]}")
 
-selected=list(map(int,input("select photos to share(comma seperated): ").split(",")))
-s = set(selected)
+selected=set(map(int,input("select photos to share(comma seperated): ").split(",")))
 print("sharing the following photos: ")
-for i in s:
+for i in selected:
     print(photos[i])
