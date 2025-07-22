@@ -58,7 +58,49 @@ while True:
                 if cc == len((chat[i][j][0]).split()):
                     print(f"{i}: {chat[i][j][0]}")
                     break
-            break
-            
+    elif ch == 6:
+        long_msg = []
+        for i in chat:
+            long_msg.append(len(chat[i]))
+        for i in chat:
+            if max(long_msg) == len(chat[i]):
+                print(f"Most active user: {i} ({len(chat[i])} messages)")
+                break 
+    elif ch == 7:
+        user = input("Enter user name: ")
+        if user in chat:
+            print(f'message sent by {user}: {len(chat[user])}')
+        else:
+            print("User Not Found")
+    elif ch == 8:
+        user = input("Enter user name: ")
+        frq = {}
+        if user in chat:  
+            for i in range (len(chat[user])): 
+                s = (chat[user][i][0]).split()
+                for j in s:
+                    if j not in frq:
+                        frq[j] = s.count(j)
+            print(max(frq, key=frq.get))   
+        else:
+            print("User Not Found") 
+    elif ch == 9:
+        user = input("Enter user name: ")
+        if user in chat:
+            for i in range (len(chat[user])): 
+                if i == 0:
+                    print(f"First message by {user}: '{user}: {chat[user][i][0]}'")
+                if i == len(chat[user]) - 1 :
+                    print(f"last message by {user}: '{user}: {chat[user][i][0]}'")
+        else:
+            print("User Not Found")
+    elif ch == 10:
+        user = input("Enter user name: ")
+        if user in chat:
+            print(f"user {user} found in chat")
+        else:
+            print(f"user {user} not found in chat")
+    elif ch == 11:
+        pass
     elif ch == 20:
         break
