@@ -35,7 +35,7 @@ function reduces code complexity,reuse,divide code
 # ● System Programming: Managing hardware resources and process control.
 # Functions are an essential part of Python programming, making the code efficient, reusable,
 # and easy to maintain.
-
+'''
 data = {'current_balance': 54785,'history':[]}
 def check_balance():
     print(data['current_balance'])
@@ -79,3 +79,33 @@ while True:
             print(i)
     else:
         print("Invalid Option. Try again")
+'''
+
+def add(a,b):
+    return a+b
+def sub(a,b):
+    return a-b
+def mul(a,b):
+    return a*b
+def div(a,b):
+    return a/b
+def mod(a,b):
+    return a%b
+
+exp = input("Enter Expression: ")
+op = None
+for i in exp:
+    if not i.isdigit():
+        op = i
+a,b=exp.split(op)
+a,b = int(a),int(b)
+if op == '+':
+    print(add(a,b))
+elif op == '-':
+    print(sub(a,b))
+elif op == '*':
+    print(mul(a,b))
+elif op =='/':
+    print(div(a,b))
+elif op == '%':
+    print(mod(a,b)) 
