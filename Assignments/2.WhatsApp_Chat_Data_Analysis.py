@@ -19,14 +19,14 @@ while True:
     print("9. Retrieve the first and last message sent by a user")
     print("10. Check if a user is present in the chat")
     print("11. Find commonly repeated words")
-    print("13. Identify the user with the longest average message length")
-    print("14. Count how many messages mention a specific user")
-    print("15. Remove duplicate messages")
-    print("16. Sort messages alphabetically")
-    print("17. Extract all questions asked in the chat")
-    print("18. Calculate the reply ratio between two users")
-    print("19. Check for deleted messages")
-    print("20. Exit")
+    print("12. Identify the user with the longest average message length")
+    print("13. Count how many messages mention a specific user")
+    print("14. Remove duplicate messages")
+    print("15. Sort messages alphabetically")
+    print("16. Extract all questions asked in the chat")
+    print("17. Calculate the reply ratio between two users")
+    print("18. Check for deleted messages")
+    print("19. Exit")
     ch = int(input("Enter your Choice: "))
     if ch == 1:
         print("Total messages = ",n)
@@ -101,6 +101,21 @@ while True:
         else:
             print(f"user {user} not found in chat")
     elif ch == 11:
-        pass
-    elif ch == 20:
+        frq = {}
+        messages = []
+        for i in chat:  
+            for j in range (len(chat[i])): 
+                s = (chat[i][j][0]).split()
+                for k in s:
+                    messages.append(k)
+        for i in messages:
+            if i not in frq:
+                frq[i] = messages.count(i)
+        for i in frq:
+            if frq[i] == max(frq.values()):
+                res.add(i)
+        print(res)
+    elif ch == 12:
+
+    elif ch == 19:
         break
