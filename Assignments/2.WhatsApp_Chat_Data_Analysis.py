@@ -116,6 +116,7 @@ while True:
                 res.add(i)
         print(res)
     elif ch == 12:
+        pass
 
     elif ch == 19:
         break
