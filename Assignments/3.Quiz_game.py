@@ -36,7 +36,7 @@ for i in questions:
             print('✅ Correct!')
             print(next(next_que))
         else:
-            print("❌ Wrong! The correct answer is 'c'" )
+            print("❌ Wrong! The correct answer is 'b'" )
             print(next(next_que))
     if i == 'que3':
         ans = input("Your answer (a/b/c/d): ")
@@ -45,7 +45,7 @@ for i in questions:
             print('✅ Correct!')
             print(next(next_que))
         else:
-            print("❌ Wrong! The correct answer is 'c'" )
+            print("❌ Wrong! The correct answer is 'b'" )
             print(next(next_que))
     if i == 'que4':
         ans = input("Your answer (a/b/c/d): ")
@@ -54,7 +54,7 @@ for i in questions:
             print('✅ Correct!')
             print(next(next_que))
         else:
-            print("❌ Wrong! The correct answer is 'c'" )
+            print("❌ Wrong! The correct answer is 'a'" )
             print(next(next_que))
     if i == 'que5':
         ans = input("Your answer (a/b/c/d): ")
@@ -63,7 +63,7 @@ for i in questions:
             print('✅ Correct!')
             print(next(next_que))
         else:
-            print("❌ Wrong! The correct answer is 'c'" )
+            print("❌ Wrong! The correct answer is 'b'" )
             print(next(next_que))
     if i == 'que6':
         ans = input("Your answer (a/b/c/d): ")
@@ -72,7 +72,7 @@ for i in questions:
             print('✅ Correct!')
             print(next(next_que))
         else:
-            print("❌ Wrong! The correct answer is 'c'" )
+            print("❌ Wrong! The correct answer is 'b'" )
             print(next(next_que))
     if i == 'que7':
         ans = input("Your answer (a/b/c/d): ")
@@ -90,7 +90,7 @@ for i in questions:
             print('✅ Correct!')
             print(next(next_que))
         else:
-            print("❌ Wrong! The correct answer is 'c'" )
+            print("❌ Wrong! The correct answer is 'd'" )
             print(next(next_que))
     if i == 'que9':
         ans = input("Your answer (a/b/c/d): ")
@@ -99,7 +99,7 @@ for i in questions:
             print('✅ Correct!')
             print(next(next_que))
         else:
-            print("❌ Wrong! The correct answer is 'c'" )
+            print("❌ Wrong! The correct answer is 'b'" )
             print(next(next_que))
     if i == 'que10':
         ans = input("Your answer (a/b/c/d): ")
@@ -108,7 +108,7 @@ for i in questions:
             print('✅ Correct!')
             break
         else:
-            print("❌ Wrong! The correct answer is 'c'" )
+            print("❌ Wrong! The correct answer is 'b'" )
             break
 
 
