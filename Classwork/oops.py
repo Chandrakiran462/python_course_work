@@ -23,7 +23,7 @@
 
 # class is a blueprint
 # object is user [syntax] => user = classname()
-
+'''
 class Instagram:
     ui = 1
     def addingusername(self,username):          # self will specify the user to know who call the function
@@ -45,8 +45,73 @@ sri.addingusername('sri')
 
 
 kiran.uiupdate(7)
-kiran.Instagram(6)
+Instagram.uiupdate(6)
 
 
 kiran.reels(6)
 kiran.Instagram(6)
+'''
+
+# constructor
+
+class Instagaram:
+    # constructor
+    def __init__ (self,username,password):                # when ever we need to initialize attributes when we call objects
+        print("Welcome to Instagram")
+        self._bio= ''       # protected variable
+        self.post= []
+        self.followers = []
+        self.following = []
+        self.username = username
+        self.__password = password
+        print(f'Hello {username} login successful')
+
+    @property           # getter
+    def bio(self):
+        return self._bio
+    @bio.setter         # setter
+    def bio(self,upd_bio):
+        self._bio = upd_bio
+    
+    def showPassword(self):
+        return self.__password
+    def updatePassword(self):
+        self.__password = new_pwd 
+
+kiran = Instagaram('Kiran','Kiran@132')
+
+
+# Encapsulation
+# to protect attributes to 
+
+
+# Public Variables
+print ("Bio: ",kiran.bio)
+print ("Post: ",kiran.post)
+print ("Followers: ",kiran.followers)
+print ("Following: ",kiran.following)
+print ("Username: ",kiran.username)
+
+# private Variables
+print (kiran.showPassword())
+
+# modifing - public variables
+# modifing public variables can be done inside class and also outside the class
+kiran.bio = 'peace'
+kiran.post.append('kiran.png')
+kiran.followers.extend(['shannu','sri','sai'])
+kiran.following.extend(['ram','chanran'])
+kiran.username = 'i_am_kiran'
+
+print('After Update')
+print ("Bio: ",kiran.bio)
+print ("Post: ",kiran.post)
+print ("Followers: ",kiran.followers)
+print ("Following: ",kiran.following)
+print ("Username: ",kiran.username)
+
+
+# modifying - private variables
+# modifying the private variables can only be done inside the class using a function
+# print("showpass",kiran.showPassword())
+# print("update password:",updatePassword("krian12") )
