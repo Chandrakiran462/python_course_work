@@ -84,6 +84,10 @@ kiran = Instagaram('Kiran','Kiran@132')
 # Encapsulation
 # to protect attributes to 
 
+# Public Variables
+# protected variable
+# private Variables
+
 
 # Public Variables
 print ("Bio: ",kiran.bio)
