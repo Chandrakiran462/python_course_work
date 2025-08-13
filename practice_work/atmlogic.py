@@ -73,3 +73,6 @@ def View_transaction():
             print("No Transactions")
     else:
         print("You need to login again")
+def palindrome(s):
+    if s == s[::-1]:
+        print('True')
