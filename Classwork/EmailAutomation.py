@@ -43,4 +43,7 @@ def send_bulk_emails(csv_file, subject, body):
             for row in reader:
                 if row:
                     email = row[0]
-                    send_email
+                    send_email(email,subject,body)
+
+    except Exception as e:
+        print(f"Error reading CSV file: {e}")
