@@ -10,7 +10,7 @@ from email.mime.text import MIMEText
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
 SENDER_EMAIL = 'asschandrakiran@gmail.com'
-SENDER_PASSWORD = 'fmvw lipd dkno bfew'
+SENDER_PASSWORD = ''
 
 def send_email(to_email,subject,body):
     try:                            # try used because any network issue or someother issues may occure
