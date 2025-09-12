@@ -1,0 +1,3 @@
+Patient: Meena Rani
+Age: 78
+Symptoms: chest pain, critical condition, possible heart attack.

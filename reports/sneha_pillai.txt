@@ -1,0 +1,3 @@
+Patient: Sneha Pillai
+Age: 35
+Symptoms: stable, minor headache, no significant issues.

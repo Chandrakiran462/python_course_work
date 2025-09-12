@@ -1,0 +1,3 @@
+Patient: siva
+Age: 19
+Symptoms: headache, cold, fever

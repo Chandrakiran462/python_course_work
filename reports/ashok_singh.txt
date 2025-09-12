@@ -1,0 +1,3 @@
+Patient: Ashok Singh
+Age: 55
+Symptoms: severe head injury, unresponsive, transferred to ICU.

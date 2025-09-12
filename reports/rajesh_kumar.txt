@@ -1,0 +1,3 @@
+Patient: Rajesh Kumar
+Age: 38
+Symptoms: sudden stroke, unconscious, admitted to ICU.

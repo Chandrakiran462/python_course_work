@@ -1,0 +1,3 @@
+Patient: Vivek Choudhary
+Age: 20
+Symptoms: mild throat pain, stable, prescribed warm fluids
