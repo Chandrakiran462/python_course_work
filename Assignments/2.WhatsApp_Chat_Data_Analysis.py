@@ -103,6 +103,7 @@ while True:
     elif ch == 11:
         frq = {}
         messages = []
+        res = set()
         for i in chat:  
             for j in range (len(chat[i])): 
                 s = (chat[i][j][0]).split()
@@ -197,3 +198,438 @@ while True:
 
     elif ch == 19:
         break
+
+
+
+'''
+Enter the number of chats: 6
+kiran: Hii Shanmukh
+shanmukh: Hii kiran. How are you?
+kiran: I am good. How are you?
+shanmukh: I am also good. so, what are you doing here?
+kiran: I came to watch movie.
+shanmukh: ok enjoy your movie. Bye
+{'kiran': [(' Hii Shanmukh', 0), (' I am good. How are you?', 2), (' I came to watch movie.', 4)], 'shanmukh': [(' Hii kiran. How are you?', 1), (' I am also good. so, what are you doing here?', 3), (' ok enjoy your movie. Bye', 5)]}
+1. Count total number of messages
+2. Identify unique users in the chat
+3. Count total words in the chat
+4. Calculate average words per message
+5. Find the longest message sent
+6. Find the most active user
+7. Get message count for a specific user
+8. Find the most frequently used word by a specific user
+9. Retrieve the first and last message sent by a user
+10. Check if a user is present in the chat
+11. Find commonly repeated words
+12. Identify the user with the longest average message length
+13. Count how many messages mention a specific user
+14. Remove duplicate messages
+15. Sort messages alphabetically
+16. Extract all questions asked in the chat
+17. Calculate the reply ratio between two users
+18. Check for deleted messages
+19. Exit
+Enter your Choice: 1
+Total messages =  6
+1. Count total number of messages
+2. Identify unique users in the chat
+3. Count total words in the chat
+4. Calculate average words per message
+5. Find the longest message sent
+6. Find the most active user
+7. Get message count for a specific user
+8. Find the most frequently used word by a specific user
+9. Retrieve the first and last message sent by a user
+10. Check if a user is present in the chat
+11. Find commonly repeated words
+12. Identify the user with the longest average message length
+13. Count how many messages mention a specific user
+14. Remove duplicate messages
+15. Sort messages alphabetically
+16. Extract all questions asked in the chat
+17. Calculate the reply ratio between two users
+18. Check for deleted messages
+19. Exit
+Enter your Choice: 2
+{'kiran', 'shanmukh'}
+1. Count total number of messages
+2. Identify unique users in the chat
+3. Count total words in the chat
+4. Calculate average words per message
+5. Find the longest message sent
+6. Find the most active user
+7. Get message count for a specific user
+8. Find the most frequently used word by a specific user
+9. Retrieve the first and last message sent by a user
+10. Check if a user is present in the chat
+11. Find commonly repeated words
+12. Identify the user with the longest average message length
+13. Count how many messages mention a specific user
+14. Remove duplicate messages
+15. Sort messages alphabetically
+16. Extract all questions asked in the chat
+17. Calculate the reply ratio between two users
+18. Check for deleted messages
+19. Exit
+Enter your Choice: 3
+33
+1. Count total number of messages
+2. Identify unique users in the chat
+3. Count total words in the chat
+4. Calculate average words per message
+5. Find the longest message sent
+6. Find the most active user
+7. Get message count for a specific user
+8. Find the most frequently used word by a specific user
+9. Retrieve the first and last message sent by a user
+10. Check if a user is present in the chat
+11. Find commonly repeated words
+12. Identify the user with the longest average message length
+13. Count how many messages mention a specific user
+14. Remove duplicate messages
+15. Sort messages alphabetically
+16. Extract all questions asked in the chat
+17. Calculate the reply ratio between two users
+18. Check for deleted messages
+19. Exit
+Enter your Choice: 4
+Average words per message: 5.50
+1. Count total number of messages
+2. Identify unique users in the chat
+3. Count total words in the chat
+4. Calculate average words per message
+5. Find the longest message sent
+6. Find the most active user
+7. Get message count for a specific user
+8. Find the most frequently used word by a specific user
+9. Retrieve the first and last message sent by a user
+10. Check if a user is present in the chat
+11. Find commonly repeated words
+12. Identify the user with the longest average message length
+13. Count how many messages mention a specific user
+14. Remove duplicate messages
+15. Sort messages alphabetically
+16. Extract all questions asked in the chat
+17. Calculate the reply ratio between two users
+18. Check for deleted messages
+19. Exit
+Enter your Choice: 5
+shanmukh:  I am also good. so, what are you doing here?
+1. Count total number of messages
+2. Identify unique users in the chat
+3. Count total words in the chat
+4. Calculate average words per message
+5. Find the longest message sent
+6. Find the most active user
+7. Get message count for a specific user
+8. Find the most frequently used word by a specific user
+9. Retrieve the first and last message sent by a user
+10. Check if a user is present in the chat
+11. Find commonly repeated words
+12. Identify the user with the longest average message length
+13. Count how many messages mention a specific user
+14. Remove duplicate messages
+15. Sort messages alphabetically
+16. Extract all questions asked in the chat
+17. Calculate the reply ratio between two users
+18. Check for deleted messages
+19. Exit
+Enter your Choice: 6
+Most active user: kiran (3 messages)
+1. Count total number of messages
+2. Identify unique users in the chat
+3. Count total words in the chat
+4. Calculate average words per message
+5. Find the longest message sent
+6. Find the most active user
+7. Get message count for a specific user
+8. Find the most frequently used word by a specific user
+9. Retrieve the first and last message sent by a user
+10. Check if a user is present in the chat
+11. Find commonly repeated words
+12. Identify the user with the longest average message length
+13. Count how many messages mention a specific user
+14. Remove duplicate messages
+15. Sort messages alphabetically
+16. Extract all questions asked in the chat
+17. Calculate the reply ratio between two users
+18. Check for deleted messages
+19. Exit
+Enter your Choice: 7
+Enter user name: kiran
+message sent by kiran: 3
+1. Count total number of messages
+2. Identify unique users in the chat
+3. Count total words in the chat
+4. Calculate average words per message
+5. Find the longest message sent
+6. Find the most active user
+7. Get message count for a specific user
+8. Find the most frequently used word by a specific user
+9. Retrieve the first and last message sent by a user
+10. Check if a user is present in the chat
+11. Find commonly repeated words
+12. Identify the user with the longest average message length
+13. Count how many messages mention a specific user
+14. Remove duplicate messages
+15. Sort messages alphabetically
+16. Extract all questions asked in the chat
+17. Calculate the reply ratio between two users
+18. Check for deleted messages
+19. Exit
+Enter your Choice: 8
+Enter user name: shanmukh
+Hii
+1. Count total number of messages
+2. Identify unique users in the chat
+3. Count total words in the chat
+4. Calculate average words per message
+5. Find the longest message sent
+6. Find the most active user
+7. Get message count for a specific user
+8. Find the most frequently used word by a specific user
+9. Retrieve the first and last message sent by a user
+10. Check if a user is present in the chat
+11. Find commonly repeated words
+12. Identify the user with the longest average message length
+13. Count how many messages mention a specific user
+14. Remove duplicate messages
+15. Sort messages alphabetically
+16. Extract all questions asked in the chat
+17. Calculate the reply ratio between two users
+18. Check for deleted messages
+19. Exit
+Enter your Choice: 9
+Enter user name: kiran
+First message by kiran: 'kiran:  Hii Shanmukh'
+last message by kiran: 'kiran:  I came to watch movie.'
+1. Count total number of messages
+2. Identify unique users in the chat
+3. Count total words in the chat
+4. Calculate average words per message
+5. Find the longest message sent
+6. Find the most active user
+7. Get message count for a specific user
+8. Find the most frequently used word by a specific user
+9. Retrieve the first and last message sent by a user
+10. Check if a user is present in the chat
+11. Find commonly repeated words
+12. Identify the user with the longest average message length
+13. Count how many messages mention a specific user
+14. Remove duplicate messages
+15. Sort messages alphabetically
+16. Extract all questions asked in the chat
+17. Calculate the reply ratio between two users
+18. Check for deleted messages
+19. Exit
+Enter your Choice: 10
+Enter user name: shanmukh
+user shanmukh found in chat
+1. Count total number of messages
+2. Identify unique users in the chat
+3. Count total words in the chat
+4. Calculate average words per message
+5. Find the longest message sent
+6. Find the most active user
+7. Get message count for a specific user
+8. Find the most frequently used word by a specific user
+9. Retrieve the first and last message sent by a user
+10. Check if a user is present in the chat
+11. Find commonly repeated words
+12. Identify the user with the longest average message length
+13. Count how many messages mention a specific user
+14. Remove duplicate messages
+15. Sort messages alphabetically
+16. Extract all questions asked in the chat
+17. Calculate the reply ratio between two users
+18. Check for deleted messages
+19. Exit
+Enter your Choice: 11
+{'I', 'are'}
+1. Count total number of messages
+2. Identify unique users in the chat
+3. Count total words in the chat
+4. Calculate average words per message
+5. Find the longest message sent
+6. Find the most active user
+7. Get message count for a specific user
+8. Find the most frequently used word by a specific user
+9. Retrieve the first and last message sent by a user
+10. Check if a user is present in the chat
+11. Find commonly repeated words
+12. Identify the user with the longest average message length
+13. Count how many messages mention a specific user
+14. Remove duplicate messages
+15. Sort messages alphabetically
+16. Extract all questions asked in the chat
+17. Calculate the reply ratio between two users
+18. Check for deleted messages
+19. Exit
+Enter your Choice: 12                 
+User with longest average message: shanmukh (avg 6.7 words)
+1. Count total number of messages
+2. Identify unique users in the chat
+3. Count total words in the chat
+4. Calculate average words per message
+5. Find the longest message sent
+6. Find the most active user
+7. Get message count for a specific user
+8. Find the most frequently used word by a specific user
+9. Retrieve the first and last message sent by a user
+10. Check if a user is present in the chat
+11. Find commonly repeated words
+12. Identify the user with the longest average message length
+13. Count how many messages mention a specific user
+14. Remove duplicate messages
+15. Sort messages alphabetically
+16. Extract all questions asked in the chat
+17. Calculate the reply ratio between two users
+18. Check for deleted messages
+19. Exit
+Enter your Choice: 13
+Enter user name: kiran
+Messages mentioning 'kiran': 1
+1. Count total number of messages
+2. Identify unique users in the chat
+3. Count total words in the chat
+4. Calculate average words per message
+5. Find the longest message sent
+6. Find the most active user
+7. Get message count for a specific user
+8. Find the most frequently used word by a specific user
+9. Retrieve the first and last message sent by a user
+10. Check if a user is present in the chat
+11. Find commonly repeated words
+12. Identify the user with the longest average message length
+13. Count how many messages mention a specific user
+14. Remove duplicate messages
+15. Sort messages alphabetically
+16. Extract all questions asked in the chat
+17. Calculate the reply ratio between two users
+18. Check for deleted messages
+19. Exit
+Enter your Choice: 14
+Unique messages count: 6
+Unique messages:
+kiran:  Hii Shanmukh
+kiran:  I am good. How are you?
+kiran:  I came to watch movie.
+shanmukh:  Hii kiran. How are you?
+shanmukh:  I am also good. so, what are you doing here?
+shanmukh:  ok enjoy your movie. Bye
+1. Count total number of messages
+2. Identify unique users in the chat
+3. Count total words in the chat
+4. Calculate average words per message
+5. Find the longest message sent
+6. Find the most active user
+7. Get message count for a specific user
+8. Find the most frequently used word by a specific user
+9. Retrieve the first and last message sent by a user
+10. Check if a user is present in the chat
+11. Find commonly repeated words
+12. Identify the user with the longest average message length
+13. Count how many messages mention a specific user
+14. Remove duplicate messages
+15. Sort messages alphabetically
+16. Extract all questions asked in the chat
+17. Calculate the reply ratio between two users
+18. Check for deleted messages
+19. Exit
+Enter your Choice: 15
+Messages sorted alphabetically:
+kiran:  Hii Shanmukh
+kiran:  I am good. How are you?
+kiran:  I came to watch movie.
+shanmukh:  Hii kiran. How are you?
+shanmukh:  I am also good. so, what are you doing here?
+shanmukh:  ok enjoy your movie. Bye
+1. Count total number of messages
+2. Identify unique users in the chat
+3. Count total words in the chat
+4. Calculate average words per message
+5. Find the longest message sent
+6. Find the most active user
+7. Get message count for a specific user
+8. Find the most frequently used word by a specific user
+9. Retrieve the first and last message sent by a user
+10. Check if a user is present in the chat
+11. Find commonly repeated words
+12. Identify the user with the longest average message length
+13. Count how many messages mention a specific user
+14. Remove duplicate messages
+15. Sort messages alphabetically
+16. Extract all questions asked in the chat
+17. Calculate the reply ratio between two users
+18. Check for deleted messages
+19. Exit
+Enter your Choice: 16
+Questions asked in the chat:
+kiran:  I am good. How are you?
+shanmukh:  Hii kiran. How are you?
+shanmukh:  I am also good. so, what are you doing here?
+1. Count total number of messages
+2. Identify unique users in the chat
+3. Count total words in the chat
+4. Calculate average words per message
+5. Find the longest message sent
+6. Find the most active user
+7. Get message count for a specific user
+8. Find the most frequently used word by a specific user
+9. Retrieve the first and last message sent by a user
+10. Check if a user is present in the chat
+11. Find commonly repeated words
+12. Identify the user with the longest average message length
+13. Count how many messages mention a specific user
+14. Remove duplicate messages
+15. Sort messages alphabetically
+16. Extract all questions asked in the chat
+17. Calculate the reply ratio between two users
+18. Check for deleted messages
+19. Exit
+Enter your Choice: 17
+Enter first user name: kiran
+Enter second user name: shanmukh
+Reply ratio from shanmukh to kiran: 1 replies
+1. Count total number of messages
+2. Identify unique users in the chat
+3. Count total words in the chat
+4. Calculate average words per message
+5. Find the longest message sent
+6. Find the most active user
+7. Get message count for a specific user
+8. Find the most frequently used word by a specific user
+9. Retrieve the first and last message sent by a user
+10. Check if a user is present in the chat
+11. Find commonly repeated words
+12. Identify the user with the longest average message length
+13. Count how many messages mention a specific user
+14. Remove duplicate messages
+15. Sort messages alphabetically
+16. Extract all questions asked in the chat
+17. Calculate the reply ratio between two users
+18. Check for deleted messages
+19. Exit
+Enter your Choice: 18
+Deleted messages found: 0
+1. Count total number of messages
+2. Identify unique users in the chat
+3. Count total words in the chat
+4. Calculate average words per message
+5. Find the longest message sent
+6. Find the most active user
+7. Get message count for a specific user
+8. Find the most frequently used word by a specific user
+9. Retrieve the first and last message sent by a user
+10. Check if a user is present in the chat
+11. Find commonly repeated words
+12. Identify the user with the longest average message length
+13. Count how many messages mention a specific user
+14. Remove duplicate messages
+15. Sort messages alphabetically
+16. Extract all questions asked in the chat
+17. Calculate the reply ratio between two users
+18. Check for deleted messages
+19. Exit
+Enter your Choice: 19
+'''
